@@ -10,9 +10,10 @@ app.use(bodyParser.json({ limit: "50mb" }));
 app.use(express.json());
 app.use(cors());
 
+//add Mongo URI details [username and password] before running
 mongoose
     .connect(
-        "mongodb+srv://MD-DASS-Team-9:gMd7TON4sIH4k2vO@cluster0.hnj5qxz.mongodb.net/?retryWrites=true&w=majority",
+        "mongodb+srv://<username>:<password>@cluster0.hnj5qxz.mongodb.net/?retryWrites=true&w=majority",
         {
             useNewUrlParser: true,
             useUnifiedTopology: true,
